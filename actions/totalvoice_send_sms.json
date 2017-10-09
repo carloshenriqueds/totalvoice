@@ -1,0 +1,106 @@
+{
+  "name":{
+    "pt_BR":"enviar SMS",
+    "en":"send a SMS"
+  },
+  "action_key":"send_sms",
+  "description":{
+    "pt_BR":"enviar mensagem de SMS para um celular",
+    "en":"send a SMS message to a mobile phone"
+  },
+  "action_fields":{
+    "fields":[
+      {
+        "key":"numero_destino",
+        "name":{
+          "pt_BR":"numero destino",
+          "en":"destination number"
+        },
+        "description":{
+          "pt_BR":"Número do telefone do seu cliente",
+          "en":"Client phone number"
+        },
+        "required":true,
+        "visible":true,
+        "advanced":false,
+        "field_type":"custom",
+        "data_type":"string",
+        "max":50,
+        "placeholder":{
+          "pt_BR":"",
+          "en":""
+        },
+        "label":{
+          "pt_BR":"",
+          "en":""
+        }
+      },
+      {
+        "key":"mensagem",
+        "name":{
+          "pt_BR":"mensagem",
+          "en":"message"
+        },
+        "description":{
+          "pt_BR":"Mensagem a ser enviada por SMS para o seu cliente. Aqui há um limite de 160 caracteres.",
+          "en":"SMS message that will be sent to the client. Limit 160 characters."
+        },
+        "required":true,
+        "visible":true,
+        "advanced":false,
+        "field_type":"custom_textarea",
+        "data_type":"string",
+        "max":50,
+        "placeholder":{
+          "pt_BR":"",
+          "en":""
+        },
+        "label":{
+          "pt_BR":"",
+          "en":""
+        }
+      },
+      {
+        "key":"resposta_usuario",
+        "name":{
+          "pt_BR":"Resposta: usuário",
+          "en":"Answer: user"
+        },
+        "description":{
+          "pt_BR":"Configura se o SMS poderá ser respondido ou não",
+          "en":"Can the SMS be replied to?"
+        },
+        "required":false,
+        "visible":true,
+        "advanced":true,
+        "field_type":"dropdown",
+        "data_type":"string",
+        "list":{
+          "type":"local",
+          "data":[
+            {
+              "label":"true",
+              "value":true
+            },
+            {
+              "label":"false",
+              "value":false
+            }
+          ]
+        },
+        "placeholder":{
+          "pt_BR":"Selecionar resposta",
+          "en":"Select answer"
+        },
+        "label":{
+          "pt_BR":"Resposta: usuário",
+          "en":"Answer: user"
+        }
+      }
+    ]
+  },
+  "request":{
+    "method_name":"/sms",
+    "json_api":true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name":"TotalVoice",
+  "app_id":"totalvoice",
+  "description":{
+    "pt_BR":"A TotalVoice é uma API de telefonia poderosa, e permite que empresas possam colocar SMS, torpedos de voz e ligações diretamente em seus aplicativos. Funciona no modelo pay as you go, sem fidelidade ou custos surpresa.",
+    "en":"TotalVoice is a powerful communication API that allows companies to use SMS and voice directly into their applications. As a pay as you go, there are no extra or hidden costs."
+  },
+  "website":"https://www.totalvoice.com.br/",
+  "signup_url":"https://api.totalvoice.com.br/painel/signup.php",
+  "video":"",
+  "api_base_uri":{
+    "production":{
+      "uri":"https://api.totalvoice.com.br",
+      "label":"Produção",
+      "default":true
+    }
+  },
+  "authentication":{
+    "type":"pass_through_header",
+    "fields":[
+      {
+        "name":"Access-Token",
+        "label":"Access-Token",
+        "mapping":"Access-Token",
+        "type":"text",
+        "validations":[
+          {
+            "name":"min_length",
+            "value":32
+          }
+        ]
+      }
+    ]
+  }
+}
