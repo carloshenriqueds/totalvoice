@@ -1,0 +1,337 @@
+{
+    "name":{
+      "pt_BR":"enviar TTS",
+      "en":"send a TTS"
+    },
+    "action_key":"send_tts",
+    "description":{
+      "pt_BR":"enviar mensagem de TTS para um celular",
+      "en":"send a TTS message to a mobile phone"
+    },
+    "action_fields":{
+      "fields":[
+        {
+          "key":"numero_destino",
+          "name":{
+            "pt_BR":"numero destino",
+            "en":"destination number"
+          },
+          "description":{
+            "pt_BR":"Número do telefone do seu cliente",
+            "en":"Client phone number"
+          },
+          "required":true,
+          "visible":true,
+          "advanced":false,
+          "field_type":"custom",
+          "data_type":"string",
+          "max":50,
+          "placeholder":{
+            "pt_BR":"",
+            "en":""
+          },
+          "label":{
+            "pt_BR":"",
+            "en":""
+          }
+        },
+        {
+          "key":"mensagem",
+          "name":{
+            "pt_BR":"mensagem",
+            "en":"message"
+          },
+          "description":{
+            "pt_BR":"Mensagem a ser enviada por TTS para o seu cliente.",
+            "en":"TTS message that will be sent to the client."
+          },
+          "required":true,
+          "visible":true,
+          "advanced":false,
+          "field_type":"custom_textarea",
+          "data_type":"string",
+          "max":50,
+          "placeholder":{
+            "pt_BR":"",
+            "en":""
+          },
+          "label":{
+            "pt_BR":"",
+            "en":""
+          }
+        },
+        {
+          "key":"resposta_usuario",
+          "name":{
+            "pt_BR":"Resposta: usuário",
+            "en":"Answer: user"
+          },
+          "description":{
+            "pt_BR":"Configura se o TTS poderá ser respondido ou não",
+            "en":"Can the TTS be replied to?"
+          },
+          "required":false,
+          "visible":true,
+          "advanced":true,
+          "field_type":"dropdown",
+          "data_type":"string",
+          "list":{
+            "type":"local",
+            "data":[
+              {
+                "label":"true",
+                "value":true
+              },
+              {
+                "label":"false",
+                "value":false
+              }
+            ]
+          },
+          "placeholder":{
+            "pt_BR":"Selecionar resposta",
+            "en":"Select answer"
+          },
+          "label":{
+            "pt_BR":"Resposta: usuário",
+            "en":"Answer: user"
+          }
+        },
+          {
+            "key":"tipo_voz",
+            "name":{
+              "pt_BR":"De -10 a 10. Onde -10=muito lento, 0=normal e 10=muito rápido",
+              "en":"From -10 to 10. Where -10 = very slow, 0 = normal and 10 = very fast"
+            },
+            "description":{
+              "pt_BR":"Configura a velocidade da voz do TTS",
+              "en":"Set the TTS voice speed"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":true,
+            "field_type":"dropdown",
+            "data_type":"string",
+            "list":{
+              "type":"local",
+              "data":[
+                {
+                  "label":"0",
+                  "value":"0"
+                },
+                {
+                  "label":"1",
+                  "value":"1"
+                },
+                {
+                  "label":"2",
+                  "value":"2"
+                },
+                {
+                  "label":"3",
+                  "value":"3"
+                },
+                {
+                  "label":"4",
+                  "value":"4"
+                },
+                {
+                  "label":"5",
+                  "value":"5"
+                },
+                {
+                  "label":"6",
+                  "value":"6"
+                },
+                {
+                  "label":"7",
+                  "value":"7"
+                },
+                {
+                  "label":"8",
+                  "value":"8"
+                },
+                {
+                  "label":"9",
+                  "value":"9"
+                },
+                {
+                  "label":"10",
+                  "value":"10"
+                },
+                {
+                    "label":"-1",
+                    "value":"-1"
+                },
+                {
+                    "label":"-2",
+                    "value":"-2"
+                },
+                  {
+                    "label":"-3",
+                    "value":"-3"
+                  },
+                  {
+                    "label":"-4",
+                    "value":"-4"
+                  },
+                  {
+                    "label":"-5",
+                    "value":"-5"
+                  },
+                  {
+                    "label":"-6",
+                    "value":"-6"
+                  },
+                  {
+                    "label":"-7",
+                    "value":"-7"
+                  },
+                  {
+                    "label":"-8",
+                    "value":"-8"
+                  },
+                  {
+                    "label":"-9",
+                    "value":"-9"
+                  },
+                  {
+                    "label":"-10",
+                    "value":"-10"
+                  }
+              ]
+            },
+            "placeholder":{
+              "pt_BR":"Selecionar velocidade",
+              "en":"Select speed"
+            },
+            "label":{
+              "pt_BR":"Velocidade",
+              "en":"Speed"
+            }
+          },
+          {
+              "key":"tipo_voz",
+              "name":{
+                "pt_BR":"Informe a sigla do idioma concatenado ao nome do personagem que vai falar",
+                "en":"Enter the language concatenated to the name of the character who will speak"
+              },
+              "description":{
+                "pt_BR":"Configura o tipo e idioma da voz do TTS",
+                "en":"Set the type and language of the TTS voice"
+              },
+              "required":false,
+              "visible":true,
+              "advanced":true,
+              "field_type":"dropdown",
+              "data_type":"string",
+              "list":{
+                "type":"local",
+                "data":[
+                  {
+                    "label":"br-Vitoria",
+                    "value":"br-Vitoria"
+                  },
+                  {
+                    "label":"br-Ricardo",
+                    "value":"br-Ricardo"
+                  },
+                  {
+                    "label":"en-Joey",
+                    "value":"en-Joey"
+                  },
+                  {
+                      "label":"en-Joanna",
+                      "value":"en-Joanna"
+                  },
+                  {
+                    "label":"fre-Celine",
+                    "value":"fre-Celine"
+                  },
+                  {
+                      "label":"fre-Mathieu",
+                      "value":"fre-Mathieu"
+                  },
+                  {
+                    "label":"ger-Vicki",
+                    "value":"ger-Vicki"
+                  },
+                  {
+                      "label":"ger-Hans",
+                      "value":"ger-Hans"
+                  },
+                  {
+                    "label":"ita-Carla",
+                    "value":"ita-Carla"
+                  },
+                  {
+                      "label":"ita-Giorgio",
+                      "value":"ita-Giorgio"
+                  },
+                  {
+                    "label":"jap-Mizuki",
+                    "value":"jap-Mizuki"
+                  },
+                  {
+                    "label":"pol-Jan",
+                    "value":"pol-Jan"
+                  },
+                  {
+                    "label":"rus-Tatyana",
+                    "value":"rus-Tatyana"
+                  },
+                  {
+                      "label":"rus-Maxim",
+                      "value":"rus-Maxim"
+                  },
+                  {
+                    "label":"esp-Conchita",
+                    "value":"esp-Conchita"
+                  },
+                  {
+                    "label":"esp-Enrique",
+                    "value":"esp-Enrique"
+                  }
+                ]
+              },
+              "placeholder":{
+                "pt_BR":"Selecionar o tipo de voz",
+                "en":"Select the type of voice"
+              },
+              "label":{
+                "pt_BR":"Tipo de voz",
+                "en":"Type of voice"
+              }
+            },
+            {
+              "key":"bina",
+              "name":{
+                "pt_BR":"bina",
+                "en":"bina"
+              },
+              "description":{
+                "pt_BR":"Número de telefone que aparecerá no identificador de quem receber a chamada, formato DDD + Número exemplo: 4832830151",
+                "en":"Phone number that will appear on the caller ID, DDD + format Example number: 4832830151"
+              },
+              "required":false,
+              "visible":true,
+              "advanced":false,
+              "field_type":"custom_textarea",
+              "data_type":"string",
+              "max":50,
+              "placeholder":{
+                "pt_BR":"",
+                "en":""
+              },
+              "label":{
+                "pt_BR":"",
+                "en":""
+              }
+            }
+      ]
+    },
+    "request":{
+      "method_name":"/tts",
+      "json_api":true
+    }
+  }
