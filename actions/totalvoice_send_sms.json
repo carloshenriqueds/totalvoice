@@ -96,6 +96,43 @@
           "pt_BR":"Resposta: usuário",
           "en":"Answer: user"
         }
+      },
+      {
+        "key":"multi_sms",
+        "name":{
+          "pt_BR":"Multi SMS",
+          "en":"Multi SMS"
+        },
+        "description":{
+          "pt_BR":"Aceita SMS com mais de 160 char - ate 16.000. Envia multiplos sms para o mesmo numero (um a cada 160 char) e retorna array de ids. Default false.",
+          "en":"Supports SMS with over 160 char - up to 16,000. Sends multiple sms to the same number (one every 160 char) and returns array of ids. Default false."
+        },
+        "required":false,
+        "visible":true,
+        "advanced":true,
+        "field_type":"dropdown",
+        "data_type":"string",
+        "list":{
+          "type":"local",
+          "data":[
+            {
+              "label":"true",
+              "value":true
+            },
+            {
+              "label":"false",
+              "value":false
+            }
+          ]
+        },
+        "placeholder":{
+          "pt_BR":"Selecionar multi SMS",
+          "en":"Select Multi SMS"
+        },
+        "label":{
+          "pt_BR":"Multi SMS",
+          "en":"Multi SMS"
+        }
       }
     ]
   },
